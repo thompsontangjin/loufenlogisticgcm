@@ -10,15 +10,17 @@ from lxml import etree
 import sys
 import os
 import tornado
-import tornado.database
 from tornado.escape import json_encode
 import math
-import web
 import time
 import urllib2,json
 import lxml
 from lxml import etree
 import sys
+import torndb
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 
 #数据库联结
